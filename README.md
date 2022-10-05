@@ -2,11 +2,11 @@
 
 Members: Matthew Sorensen, Stuart Jensen, Jasper Mowdood, Milena Zeltser
 
-## LiftOff Simulator
+## 2D Minecraft / Terraria clone
 
 image
 
 ## Project description
 
-Graphics based game where the user can test rockets for missions.
+Graphics based game where the user can interect with a 2d world using tools to gather resources from the world.
 
