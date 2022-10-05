@@ -4,7 +4,7 @@ Members: Matthew Sorensen, Stuart Jensen, Jasper Mowdood, Milena Zeltser
 
 ## 2D Minecraft / Terraria clone
 
-image
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 ## Project description
 
