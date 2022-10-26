@@ -10,7 +10,9 @@ Members: Matthew Sorensen, Stuart Jensen, Jasper Mowdood, Milena Zeltser
 
 Story filled graphics based game where the user can interect with a 2d world using tools to gather resources from the world. Resources will be used for better weapons for fighting bosses and whatnot.
 
-##Class diagram - (Rough)
+## Class diagram - (Rough)
 
-![Class Diagram]()
+![Class Diagram](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/2dGame.drawio.png?raw=true)
+
+## Logic flow diagram
 
