@@ -18,4 +18,4 @@ Written in java
 
 ## Logic flow diagram
 
-![Logic Flow]()
+![Logic Flow](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/TowerLogicFlow.png?raw=true)
