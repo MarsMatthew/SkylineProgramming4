@@ -4,7 +4,7 @@ Members: Matthew Sorensen, Stuart Jensen, Jasper Mowdood, Milena Zeltser
 
 ## Tower Defense
 
-![]()
+![Placeholder Image](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/towerDefense.jpeg?raw=true)
 
 ## Project description
 
