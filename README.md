@@ -8,7 +8,9 @@ Members: Matthew Sorensen, Stuart Jensen, Jasper Mowdood, Milena Zeltser
 
 ## Project description
 
-Story filled graphics based game where the user can interect with a 2d world using tools to gather resources from the world. Resources will be used for better weapons for fighting bosses and whatnot.
+Top down tower defense where the player uses various tower types to defeat enemies through upgrades as they progress throughout the map. The player must protect the end goal in order to not lose the game.
+
+Written in java
 
 ## Class diagram - (Rough)
 
