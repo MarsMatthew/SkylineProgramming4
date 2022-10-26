@@ -16,6 +16,6 @@ Written in java
 
 ![Class Diagram](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/2dGame.drawio.png?raw=true)
 
-## Logic flow diagram
+## Logic flow diagram - (Rough)
 
 ![Logic Flow](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/TowerLogicFlow.png?raw=true)
