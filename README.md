@@ -1,6 +1,6 @@
 # Programming Group 5
 
-Members: Matthew Sorensen, Stuart Jensen, Jasper Mowdood, Milena Zeltser
+Members: Matthew Sorensen, Stuart Jensen, Jasper Mowdood
 
 ## Tower Defense
 
