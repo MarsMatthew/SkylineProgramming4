@@ -1,21 +1,23 @@
-# Programming Group 5
+# Programming Group 4
 
-Members: Matthew Sorensen, Stuart Jensen, Jasper Mowdood
+Members: Matthew Sorensen, Jasper Mowdood
 
-## Tower Defense
+## Card Crawler
 
-![Placeholder Image](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/towerDefense.jpeg?raw=true)
+Placeholder image from the game Reigns made by Devolver Digital
+
+![Placeholder - Reigns by Devolver Digital]()
 
 ## Project description
 
-Top down tower defense where the player uses various tower types to defeat enemies through upgrades as they progress throughout the map. The player must protect the end goal in order to not lose the game.
+Card Crawler is a two dimensional graphics based game. Classic Dungeon crawler experience, but played like a deck of playing cards. The user starts by picking up a card that gives two options, they then flip the card to the left or to the right to select an option. The object of the game is to survive for as long as possible and collect gold for a high score. Purpose of the project: Learn and practice file handeling, interfaces, and create an entertaining game.
 
-Written in java
+Written in Processing Java
 
 ## Class diagram - (Rough)
 
-![Class Diagram](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/TowerClassDiagram.drawio%20(1).png?raw=true)
+![Class Diagram]()
 
 ## Logic flow diagram - (Rough)
 
-![Logic Flow](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/TowerLogicFlow.png?raw=true)
+![Logic Flow]()
