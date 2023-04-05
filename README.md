@@ -19,10 +19,10 @@ Written in Processing Java
 
 ![Gantt Chart](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/Screen%20Shot%202023-04-05%20at%207.45.48%20AM.png?raw=true)
 
+## Logic flow diagram 
+
+![Logic Flow]()
+
 ## Class diagram - (Rough)
 
 ![Class Diagram]()
-
-## Logic flow diagram - (Rough)
-
-![Logic Flow]()
