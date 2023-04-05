@@ -14,6 +14,10 @@ Card Crawler is a two dimensional graphics based game. Classic Dungeon crawler e
 
 Written in Processing Java
 
+## Progress Chart
+
+![Gantt Chart]()
+
 ## Class diagram - (Rough)
 
 ![Class Diagram]()
