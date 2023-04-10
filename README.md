@@ -17,7 +17,7 @@ Written in Processing Java
 
 ## Progress Chart
 
-![Gantt Chart](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/Screen%20Shot%202023-04-05%20at%207.45.48%20AM.png?raw=true)
+![Gantt Chart](https://github.com/MarsMatthew/SkylineProgramming4/blob/main/image/GanttChart.png?raw=true)
 
 ## Class diagram w/ Documents
 
