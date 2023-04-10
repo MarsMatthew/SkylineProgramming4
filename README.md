@@ -1,12 +1,12 @@
-# Programming Group 4
+# Programming Group 4 - Card Crawler
 
 Members: Matthew Sorensen, Jasper Mowdood
 
-## Card Crawler
+## Example cards
 
-Placeholder image from the game Reigns made by Devolver Digital
+![Skeleton]() ![Chest]()
+![Door]() ![Stickman]()
 
-![Placeholder - Reigns by Devolver Digital](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/Reigns.png?raw=true)
 
 ## Project description
 
