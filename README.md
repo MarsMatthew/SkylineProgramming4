@@ -2,7 +2,7 @@
 
 Members: Matthew Sorensen, Jasper Mowdood
 
-## Example cards
+## Example cards - (Rough!)
 
 ![Skeleton](https://github.com/Who-Am-Idk/SkylineProgramming4/blob/main/image/Screen%20Shot%202023-04-10%20at%208.33.49%20AM.png?raw=true)
 ![Chest](https://user-images.githubusercontent.com/89168748/230923382-6d6a8659-e3ac-40af-8aca-16f981362181.png)
