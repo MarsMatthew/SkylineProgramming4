@@ -19,10 +19,11 @@ Written in Processing Java
 
 ![Gantt Chart](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/Screen%20Shot%202023-04-05%20at%207.45.48%20AM.png?raw=true)
 
+## Class diagram w/ Documents
+
+![Class Diagram](https://github.com/MarsMatthew/SkylineProgramming4/blob/main/image/CardCrawlerClass.drawio.png?raw=true)
+
 ## Logic flow diagram 
 
 ![Logic Flow](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/CardCrawlerUML.drawio.png?raw=true)
 
-## Class diagram w/ Documents- ()
-
-![Class Diagram](https://github.com/MarsMatthew/SkylineProgramming4/blob/main/image/CardCrawlerClass.drawio.png?raw=true)
