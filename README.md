@@ -23,6 +23,6 @@ Written in Processing Java
 
 ![Logic Flow](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/CardCrawlerUML.drawio.png?raw=true)
 
-## Class diagram - (Rough)
+## Class diagram w/ Documents- ()
 
-![Class Diagram]()
+![Class Diagram](https://github.com/MarsMatthew/SkylineProgramming4/blob/main/image/CardCrawlerClass.drawio.png?raw=true)
