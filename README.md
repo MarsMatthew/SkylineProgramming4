@@ -12,8 +12,10 @@ Written in Processing Java
 
 ![Skeleton](https://github.com/Who-Am-Idk/SkylineProgramming4/blob/main/image/Screen%20Shot%202023-04-10%20at%208.33.49%20AM.png?raw=true)
 ![Chest](https://user-images.githubusercontent.com/89168748/230923382-6d6a8659-e3ac-40af-8aca-16f981362181.png)
-![Door](https://user-images.githubusercontent.com/89168748/230923428-28e5e912-4400-4ca4-acee-c73762e1b962.png)
-![Stickman](https://user-images.githubusercontent.com/89168748/230923459-64b56374-e531-44f6-9fe7-b1e44152d81a.png)
+
+## Rough Concept
+
+https://user-images.githubusercontent.com/89168748/235273666-81b711a7-4bc0-4fbd-9646-87e1cb2d3adf.mp4
 
 ## Progress Chart
 
@@ -26,4 +28,3 @@ Written in Processing Java
 ## Logic flow diagram 
 
 ![Logic Flow](https://github.com/MarsMatthew/SkylineProgramming5/blob/main/image/CardCrawlerUML.drawio.png?raw=true)
-
