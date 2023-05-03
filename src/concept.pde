@@ -1,36 +1,78 @@
-
-
+boolean tempLeft = false;
+boolean tempRight = false;
+boolean left = false;
+boolean right = false;
 void setup() {
   fullScreen();
 }
 void draw() {
   background(200);
-  //Creating ten billion variables at once, dont mind me.
-  float x1, x2, x3, x4, y1, y2, y3, y4, a1, a2, a3, a4, b1, b2, b3, b4, value, centerX, centerY, pointX, pointY;
-  //PointX is NOT redundant. It is used incase the point of which the card rotates needs to be moved.
-  centerX = width/2;
-  centerY = height/2;
-  pointX = width/2;
-  pointY = height-height/3;
-  a1 = centerX-120 - pointX;
-  b1 = centerY-300 - pointY;
-  a2 = centerX+120 - pointX;
-  b2 = centerY-300 - pointY;
-  a3 = centerX+120 - pointX;
-  b3 = centerY - pointY;
-  a4 = centerX-120 - pointX;
-  b4 = centerY - pointY;
+  drawCard();
+  if (tempLeft){
+    fill(0,255,0);
+  } else {
+    fill(255);
+  }
+  rect(0,0,width/10,height);
+  if(tempRight){
+    fill(0,255,0);
+  }else{
+    fill(255);
+  }
+  rect(width-width/10, 0, width, height);
+  fill(255);
+}
+void drawCard() {
+  float value = 0;
+  int pointX = width/2;
+  int pointY = height - height/3;
+  float x1, x2, x3, x4, y1, y2, y3, y4, a1, a2, a3, a4, b1, b2, b3, b4;
+  //When mouse is dragged
   if (mousePressed) {
-    //Rotate
-    value = map(mouseX, centerX-70, centerX+70, -10, 10);
-    if (value >= 40) {
-      value = 40;
-    } else if (value <= -40) {
-      value = -40;
+    //make it so card doesnt spin uncontrollably
+    value = map(mouseX, (width/2)-70, (width/2)+70, -10, 10);
+    if (value >= 20) {
+      //Make right side green
+      tempRight = true;
+      if (value >= 40) {
+        //Right side rotation stop
+        value = 40;
+      }
+    } else if (value <= -20) {
+      //Make left side green
+      tempLeft = true;
+      if (value <= -40) {
+        //Left side rotation stop
+        value = -40;
+      }
+    } else {
+      //If mouse is inbetween
+      tempLeft = false;
+      tempRight = false;
     }
   } else {
-    value = 0;
+    //Once mouse is let go
+    if (tempLeft) {
+      tempLeft = false;
+      left = true;
+    } else if (tempRight) {
+      tempRight = false;
+      right = true;
+    }
   }
+  /*
+  Rectangle coordinates
+  First define where they are ex.(width/2)-120
+  Then translate them by the rotation point (pointX, pointY)
+  */
+  a1 = (width/2)-120 - pointX;
+  b1 = (height/2)-300 - pointY;
+  a2 = (width/2)+120 - pointX;
+  b2 = (height/2)-300 - pointY;
+  a3 = (width/2)+120 - pointX;
+  b3 = (height/2) - pointY;
+  a4 = (width/2)-120 - pointX;
+  b4 = (height/2) - pointY;
   value = radians(value);
   //First coordinate
   x1 = (a1*cos(value) - b1*sin(value)) + pointX;
