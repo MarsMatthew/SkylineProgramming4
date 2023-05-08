@@ -2,25 +2,20 @@ boolean tempLeft = false;
 boolean tempRight = false;
 boolean left = false;
 boolean right = false;
+boolean play = false;
 void setup() {
   fullScreen();
 }
 void draw() {
   background(200);
   drawCard();
-  if (tempLeft){
-    fill(0,255,0);
-  } else {
-    fill(255);
+  
+  while(play){
+  if (right){
+    play = true;
+    mainScreen();
   }
-  rect(0,0,width/10,height);
-  if(tempRight){
-    fill(0,255,0);
-  }else{
-    fill(255);
   }
-  rect(width-width/10, 0, width, height);
-  fill(255);
 }
 void drawCard() {
   float value = 0;
@@ -87,4 +82,27 @@ void drawCard() {
   x4 = (a4*cos(value) - b4*sin(value))+pointX;
   y4 = (a4*sin(value) + b4*cos(value))+pointY;
   quad(x1, y1, x2, y2, x3, y3, x4, y4);
+}
+public void mainScreen(){
+  textAlign(CENTER);
+  textSize(50);
+  fill(0);
+  text("Card Game", width/2, height/8);
+  if (tempLeft){
+    fill(0,255,0);
+  } else {
+    fill(255);
+  }
+  rect(0,0,width/10,height);
+  fill(0);
+  text("settings",width/19,height/2);
+  if(tempRight){
+    fill(0,255,0);
+  }else{
+    fill(255);
+  }
+  rect(width-width/10, 0, width, height);
+  fill(0);
+  text("play",width-width/19,height/2);
+  fill(255);
 }
