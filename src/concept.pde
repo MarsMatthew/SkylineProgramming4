@@ -9,13 +9,15 @@ void setup() {
 void draw() {
   background(200);
   drawCard();
+  mainScreen();
   
-  while(play){
-  if (right){
-    play = true;
-    mainScreen();
+  if(right==true){
+    clear();
+    background(200);
+    drawCard();
   }
-  }
+  
+  
 }
 void drawCard() {
   float value = 0;
@@ -98,6 +100,7 @@ public void mainScreen(){
   text("settings",width/19,height/2);
   if(tempRight){
     fill(0,255,0);
+    play = true;
   }else{
     fill(255);
   }
