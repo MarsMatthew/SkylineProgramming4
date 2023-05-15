@@ -16,6 +16,12 @@ void draw() {
     background(200);
     drawCard();
   }
+  if(right==true){
+    clear();
+    background(200);
+    text("Made by Matthew Sorensen and Jasper Mowdood",width/2,height/2);
+    noLoop();
+  }
   
   
 }
@@ -106,6 +112,6 @@ public void mainScreen(){
   }
   rect(width-width/10, 0, width, height);
   fill(0);
-  text("settings",width-width/19,height/2);
+  text("credits",width-width/19,height/2);
   fill(255);
 }
