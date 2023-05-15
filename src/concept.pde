@@ -1,4 +1,4 @@
-boolean tempLeft = false;
+ boolean tempLeft = false;
 boolean tempRight = false;
 boolean left = false;
 boolean right = false;
@@ -11,7 +11,7 @@ void draw() {
   drawCard();
   mainScreen();
   
-  if(right==true){
+  if(left==true){
     clear();
     background(200);
     drawCard();
@@ -93,11 +93,11 @@ public void mainScreen(){
   if (tempLeft){
     fill(0,255,0);
   } else {
-    fill(255);
+    fill(255); 
   }
   rect(0,0,width/10,height);
   fill(0);
-  text("settings",width/19,height/2);
+  text("play",width/19,height/2);
   if(tempRight){
     fill(0,255,0);
     play = true;
@@ -106,6 +106,6 @@ public void mainScreen(){
   }
   rect(width-width/10, 0, width, height);
   fill(0);
-  text("play",width-width/19,height/2);
+  text("settings",width-width/19,height/2);
   fill(255);
 }
