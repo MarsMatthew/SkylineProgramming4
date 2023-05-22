@@ -2,21 +2,11 @@ public class Card {
   //Type, Name, Chest, left, right, peaceful
   private ArrayList<String> info = new ArrayList<>();
   Card() {
+    for (int i = 0; i < 12; i++) {
+      info.add(null);
+    }
   }
-  Card(Integer type) {
-    info.add(String.valueOf(type));
-    info.add(null);
-    info.add(null);
-    info.add(null);
-    info.add(null);
-    info.add(null);
-    info.add(null);
-    info.add(null);
-    info.add(null);
-    info.add(null);
-    info.add(null);
-    info.add(null);
-  }
+
   public void newCard(Integer type) {
     switch(type) {
     case 0:
@@ -29,7 +19,6 @@ public class Card {
       case 0:
         //Skeleton
         info.set(0, String.valueOf(eType));
-        info.set(1, pickName());
         info.set(3, "a sharpened bone");
         info.set(4, "a dull bone");
         info.set(6, String.valueOf(30));
@@ -38,11 +27,11 @@ public class Card {
         info.set(9, String.valueOf(10));
         info.set(10, String.valueOf(0));
         info.set(11, String.valueOf(5));
+        info.set(1, pickName());
         break;
       case 1:
         //Zombie
         info.set(0, String.valueOf(eType));
-        info.set(1, pickName());
         info.set(3, "a rotten hand");
         info.set(4, "a rotten leg");
         info.set(6, String.valueOf(25));
@@ -51,11 +40,11 @@ public class Card {
         info.set(9, String.valueOf(7));
         info.set(10, String.valueOf(5));
         info.set(11, String.valueOf(11));
+        info.set(1, pickName());
         break;
       case 2:
         //Slime
         info.set(0, String.valueOf(eType));
-        info.set(1, pickName());
         info.set(3, "a slime ball");
         info.set(4, "a slime ball");
         info.set(6, String.valueOf(40));
@@ -64,11 +53,11 @@ public class Card {
         info.set(9, String.valueOf(0));
         info.set(10, String.valueOf(5));
         info.set(11, String.valueOf(11));
+        info.set(1, pickName());
         break;
       case 3:
         //Rat
         info.set(0, String.valueOf(eType));
-        info.set(1, pickName());
         info.set(3, "a scratch");
         info.set(4, "a bite");
         info.set(6, String.valueOf(40));
@@ -77,11 +66,11 @@ public class Card {
         info.set(9, String.valueOf(10));
         info.set(10, String.valueOf(16));
         info.set(11, String.valueOf(21));
+        info.set(1, pickName());
         break;
       case 4:
         //Stone Giant
         info.set(0, String.valueOf(eType));
-        info.set(1, pickName());
         info.set(3, "a rock");
         info.set(4, "a fist");
         info.set(6, String.valueOf(55));
@@ -90,11 +79,11 @@ public class Card {
         info.set(9, String.valueOf(3));
         info.set(10, String.valueOf(21));
         info.set(11, String.valueOf(26));
+        info.set(1, pickName());
         break;
       case 5:
         //Spider
         info.set(0, String.valueOf(eType));
-        info.set(1, pickName());
         info.set(3, "a bite");
         info.set(4, "a bite");
         info.set(6, String.valueOf(30));
@@ -103,6 +92,7 @@ public class Card {
         info.set(9, String.valueOf(20));
         info.set(10, String.valueOf(26));
         info.set(11, String.valueOf(30));
+        info.set(1, pickName());
         break;
       }
       info.set(2, String.valueOf(false));
@@ -147,7 +137,9 @@ public class Card {
       info.set(11, String.valueOf(0));
       break;
     case 3:
-      //Chest
+      /*
+      Chest Type
+       */
       int cType = int(random(4));
       switch(cType) {
       case 0:
@@ -184,10 +176,39 @@ public class Card {
       break;
     }
   }
+  public boolean isChest() {
+    if (Boolean.valueOf(info.get(2))) {
+      return true;
+    }
+    return false;
+  }
+  public boolean isPeaceful() {
+    if (Boolean.valueOf(info.get(5))) {
+      return true;
+    }
+    return false;
+  }
+
+  public void displayCard() {
+    text(info.get(0), width/2, height/4);
+  }
+
+  /*
+  
+   Idea for these: if peaceful return info.get, else return "fight" and "defend"
+   
+   */
+  public String getLeft() {
+    return(info.get(3));
+  }
+
+  public String getRight() {
+    return(info.get(4));
+  }
   public String pickName() {
     BufferedReader read;
-    int low = Integer.valueOf(info.get(4));
-    int high = Integer.valueOf(info.get(5));
+    int low = Integer.valueOf(info.get(10));
+    int high = Integer.valueOf(info.get(11));
     read = createReader("EnemyNames.txt");
     String line = null;
     try {
@@ -200,6 +221,9 @@ public class Card {
     int pick = int(random(low, high));
     return  names[pick];
   }
+
+
+
   public void saveCard() {
     PrintWriter output;
     BufferedReader read;
@@ -219,6 +243,7 @@ public class Card {
     output.flush();
     output.close();
   }
+
   public void loadCurrCard() {
     BufferedReader read;
     read = createReader("currentCard.txt");
