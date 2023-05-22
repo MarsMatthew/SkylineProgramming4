@@ -140,7 +140,7 @@ public void mainScreen() {
   fill(0);
   text("CardCrawler", width/2, height/8);
   textSize(40);
-  text("Alpha 0.2.0", width/2, height/6.5);
+  text("Alpha 0.2.5", width/2, height/6.5);
   fill(255);
   leftOption = "play";
   rightOption = "credits";
