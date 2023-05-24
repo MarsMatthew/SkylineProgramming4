@@ -2,7 +2,7 @@
 
 ## How to Download
 
-Go to src, download macos folder, run app inside. Must have enemyNames.txt inside!!
+working on it :I
 
 Members: Matthew Sorensen, Jasper Mowdood
 
