@@ -15,7 +15,7 @@ Written in Processing Java
 
 ## Rough Concept
 
-https://user-images.githubusercontent.com/89168748/235273666-81b711a7-4bc0-4fbd-9646-87e1cb2d3adf.mp4
+https://github.com/Who-Am-Idk/SkylineProgramming4/assets/89168748/e81dc789-4a3d-494a-aa29-546773418083
 
 ## Progress Chart
 
