@@ -4,7 +4,7 @@ Members: Matthew Sorensen, Jasper Mowdood
 
 ## How to Download
 
-working on it :I
+link to .zip https://drive.google.com/file/d/12x05e3QpMTTwwsEiP4O8NK_aDlIm04bx/view?usp=sharing
 
 
 ## Project description
