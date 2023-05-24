@@ -1,5 +1,9 @@
 # Programming Group 4 - Card Crawler
 
+## How to Download
+
+Go to src, download macos folder, run app inside. Must have enemyNames.txt inside!!
+
 Members: Matthew Sorensen, Jasper Mowdood
 
 ## Project description
