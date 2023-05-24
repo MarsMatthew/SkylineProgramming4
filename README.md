@@ -1,10 +1,11 @@
 # Programming Group 4 - Card Crawler
 
+Members: Matthew Sorensen, Jasper Mowdood
+
 ## How to Download
 
 working on it :I
 
-Members: Matthew Sorensen, Jasper Mowdood
 
 ## Project description
 
