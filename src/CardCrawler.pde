@@ -1,48 +1,93 @@
-public boolean tempLeft = false;
-public boolean tempRight = false;
+/*
+My brain hurts.
+ 
+ To do:
+ finish combat()
+ not go insane
+ rethink decision making feature
+ rethink Card class get+sets
+ finish plyrStats + save mechanic < buttons?
+ */
+
+private Card card = new Card();
+//temporaries are to make sidebars light up and make my brain happy
+private boolean tempLeft = false;
+private boolean tempRight = false;
 public boolean left = false;
 public boolean right = false;
-public boolean play = false;
 private String leftOption = "test";
 private String rightOption = "test";
+//Version number
+private String version = "Alpha 0.2.6";
+//Game loop
+private boolean play = false;
+//Stupid loop
 private boolean cardNotGotten = true;
+//Need to expand upon. right now is only gold.
+private ArrayList<Integer> plyrStats = new ArrayList<Integer>();
 
 void setup() {
   fullScreen();
   background(200);
+  plyrStats.add(0, 0);
 }
 void draw() {
   background(200);
-  Card card = new Card();
   drawCard();
   drawSides();
-
   if (!play) {
     mainScreen();
+    //Left option = play
     if (left==true) {
       play = true;
     }
+    //Right option = credits
     if (right==true) {
       background(200);
-      text("Made by Matthew Sorensen and Jasper Mowdood", width/2, height-height/3);
+      text("Made by Matthew Sorensen and Jasper Mowdood\ni hate processing\ni'm so tired.", width/2, height-height/3);
     }
   } else
   {
+    //Gold counter
+    text("Gold: "+plyrStats.get(0), width/5, height/8);
     //I HATE THIS CODE SO MUCH AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA BUT I GOTTA GET IT DONE
     if (cardNotGotten) {
       card.newCard(0);
       cardNotGotten = false;
     }
+    card.displayCard();
     if (card.isPeaceful()) {
+      leftOption = card.getLeft();
+      rightOption = card.getRight();
       if (card.isChest()) {
-        leftOption = card.getLeft();
-        rightOption = card.getRight();
+        //Chest card
+        if (left || right) {
+          /* REMEMBER TO UPDATE ONCE PLYRSTATS IS EXPANDED!!!
+           */
+          plyrStats.set(0, (plyrStats.get(0)+10));
+          left = false;
+          right = false;
+          cardNotGotten = true;
+        }
       } else {
+        //Room card
+        if (left||right) {
+          left = false;
+          right = false;
+          cardNotGotten = true;
+        }
       }
     } else {
       //Is hostile
-      card.displayCard();
+      //combat();
+      //FOR NOW:
+      if (left||right) {
+        left = false;
+        right = false;
+        cardNotGotten = true;
+      }
     }
+    card.saveCard();
   }
 }
 void drawSides() {
@@ -140,7 +185,7 @@ public void mainScreen() {
   fill(0);
   text("CardCrawler", width/2, height/8);
   textSize(40);
-  text("Alpha 0.2.5", width/2, height/6.5);
+  text(version, width/2, height/6.5);
   fill(255);
   leftOption = "play";
   rightOption = "credits";
