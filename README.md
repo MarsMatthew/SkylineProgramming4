@@ -1,3 +1,7 @@
+# This project is on stand still.
+
+I plan to finish this project in the future. In the meantime I'm progressing my programming knowledge so that I can be satisfied with the end result. Also, I'm looking for something other than processing. I hate processing so much. -Matt
+
 # Programming Group 4 - Card Crawler
 
 Members: Matthew Sorensen, Jasper Mowdood
