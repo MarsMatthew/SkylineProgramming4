@@ -24,7 +24,7 @@ Written in Processing Java
 
 ## Rough Concept
 
-https://github.com/Who-Am-Idk/SkylineProgramming4/assets/89168748/e81dc789-4a3d-494a-aa29-546773418083
+vid removed. crying.
 
 ## Progress Chart
 
